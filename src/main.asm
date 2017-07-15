@@ -11,8 +11,10 @@ vblank_func:
 .segment "VECTORS"
 
 ; NATIVE VECTOR (65C816 Mode)
+
+; RESERVED
 vec_nat_reserved:
-	.addr $0000 ; RESERVED
+	.addr $0000
 
 ; RESERVED
 vec_nat_reserved_2:
