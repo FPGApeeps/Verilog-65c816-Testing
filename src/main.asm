@@ -2,10 +2,12 @@
 
 very_start:
 	bra very_start
+	nop
 
 
 vblank_func:
 	rti
+	nop
 
 
 .segment "VECTORS"
