@@ -80,3 +80,17 @@ vec_emu_reset:
 ; IRQ/BRK VECTOR
 vec_emu_irq_brk:
 	.addr $0000
+
+
+.segment "BANK_2"
+bank_2_test:
+	nop
+	nop
+	nop
+	;bra bank_2_test
+	rtl
+
+.segment "RODATA"
+egg:
+	.asciiz "Egg!"
+	nop
